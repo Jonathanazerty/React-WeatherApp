@@ -1,0 +1,21 @@
+body {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(0, 77, 219, 0.151);
+}
+
+.Link  {
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: rgb(100, 167, 255);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgb(217, 217, 255);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 1rem;
+}
