@@ -1,15 +1,43 @@
-
-
+/* 
 .weather {
-    background-image: ;
+    background-image: url("clearsky.jpg");
     background-size: cover;
     background-position: bottom;
     transition: 0.4 ease-out;
 }
 
-.weather.warm {
+.weather.fewclouds {
     background-image: ;
 }
+
+.weather.scattered clouds {
+    background-image: ;
+}
+
+.weather.broken clouds {
+    background-image: ;
+}
+
+.weather.shower rain {
+    background-image: ;
+}
+
+.weather.rain {
+    background-image: ;
+}
+
+.weather.thunderstorm {
+    background-image: ;
+}
+
+.weather.snow {
+    background-image: ;
+}
+
+.weather.mist {
+    background-image: ;
+} */
+
 
 main {
     min-height: 100vh;

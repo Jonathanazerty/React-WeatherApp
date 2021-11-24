@@ -58,6 +58,9 @@ const Home = () => {
                         <div className="location">
                             <div>{weather.name}, {weather.sys.country}</div>
                         </div>
+                        <div className="icon">
+                            <img src={`http://openweathermap.org/img/wn/${weather.weather[0].icon}.png`} alt="icon"/>
+                        </div>
                         <div className="temperature">
                             <div>{Math.round(weather.main.temp)}°C</div>
                         </div>
