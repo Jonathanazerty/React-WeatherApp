@@ -1,11 +1,16 @@
-/* 
+ 
 .weather {
-    background-image: url("clearsky.jpg");
-    background-size: cover;
-    background-position: bottom;
-    transition: 0.4 ease-out;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: grid;
+    grid-template-areas: 
+    "todaysdate"
+    "input"
+    "weather-info" ;
 }
 
+/*
 .weather.fewclouds {
     background-image: ;
 }
@@ -43,20 +48,75 @@ main {
     min-height: 100vh;
 }
 
+.todaysdate {
+    color: white;
+    width: 800px;
+    margin-top: 4rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    background-color: #5eafe593;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 5px 5px 5px rgba(217, 217, 255, 0.507);
+    color: white;
+    font-size: 32px;
+    font-weight: 500;
+    text-align: center;
+    text-shadow: 3px 3px 3px rgba(50, 50, 70, 0.5);
+}
+
 .input {
-    justify-content: center;
-    align-items: center;
     text-align: center;
     width: 400px;
-    margin: 20px;
     padding: 15px;
     appearance: none;
     border: none;
     outline: none;
     color: white;
-    background-color: rgb(100, 167, 255);
-    box-shadow: 5px 5px 5px rgb(217, 217, 255);
+    background-color: #0065a8c5;
+    box-shadow: 5px 5px 5px rgba(217, 217, 255, 0.507);
     border-radius: 16px;
+}
+
+.weather-info {
+    color: white;
+    width: 800px;
+    margin-bottom: 5rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    background-color: #5eafe593;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 5px 5px 5px rgba(217, 217, 255, 0.507);
+    color: white;
+}
+
+.location {
+    color: white;
+    font-size: 32px;
+    font-weight: 500;
+    text-align: center;
+    text-shadow: 2px 4px rgba(50, 50, 70, 0.5);
+}
+
+img {
+    height: 100px;
+    width: 100px;
+}
+
+.temperature {
+    font-size: 100px;
+    font-weight: 900;
+    text-shadow: 3px 6px rgba(50, 50, 70, 0.5);
+    text-align: center;
+}
+
+.description {
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    text-shadow: 2px 5px rgba(50, 50, 70, 0.5);
 }
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */

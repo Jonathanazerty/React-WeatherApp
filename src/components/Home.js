@@ -3,6 +3,10 @@ import './Home.css';
 
 const Home = () => {
 
+    const options = {weekday: 'long'}
+    const date = new Date();
+    let today = date.toLocaleDateString("en-US", options) + ' ' + date.getDate() + '-' + (date.getMonth() + 1) + '-' + date.getFullYear();
+    
     const [city, setCity] = useState('');
     const [weather, setWeather] = useState([]);
     
@@ -43,6 +47,7 @@ const Home = () => {
                     : 'weather')
                 : 'weather'}>
             <main>
+                <h3 className="todaysdate"> {today} </h3>
                 <input  
                     className="input" 
                     type="text" 

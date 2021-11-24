@@ -2,7 +2,10 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: rgba(0, 77, 219, 0.151);
+  background-image: url("./images/clearsky.jpg");
+  background-size: cover;
+  background-position: bottom;
+  transition: 0.4 ease-out;
 }
 
 .Link, .submit  {
