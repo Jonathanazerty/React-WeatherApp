@@ -37,7 +37,66 @@ const Home = () => {
     // const nameCity = weather.city.name;
     // const nameCountry = weather.city.country;
     // const temperature = weather.list[0].main.temp;
+    // const weatherdescription = weather.weather[0].description;
+
+    // if (weatherdescription === "mist") {
+    //     console.log('mist')
+    // } else if (weatherdescription === "scatteredclouds") {
+    //     console.log('scatteredclouds')
+    // } else if (weatherdescription === "brokenclouds") {
+    //     console.log('brokenclouds')
+    // } else if (weatherdescription === "showerrain") {
+    //     console.log('showerrain')
+    // } else if (weatherdescription === "rain") {
+    //     console.log('rain')
+    // } else if (weatherdescription === "thunderstorm") {
+    //     console.log('thunderstorm')
+    // } else if (weatherdescription === "snow") {
+    //     console.log('snow')
+    // } else if (weatherdescription === "fewclouds") {
+    //     console.log('fewclouds')
+    // }  else {
+    //     console.log('weather')
+    // }
+
+    // switch (weatherdescription) {
+    //     case 'weather mist':
+    //         console.log('mist')
+            
+    //         break;
+        
+    //     case 'weather scatteredclouds':
+    //         console.log('scatteredclouds')
+    //         break;
+
+    //     case 'weather brokenclouds':
+    //         console.log('brokenclouds')
+    //         break;
+
+    //     case 'weather showerrain':
+    //         console.log('showerrain')
+    //         break;
+
+    //     case 'weather rain':
+    //         console.log('rain')
+    //         break;
+
+    //     case 'weather thunderstorm':
+    //         console.log('thunderstorm')
+    //         break;
+
+    //     case 'weather snow':
+    //         console.log('snow')
+    //         break;
+
+    //     case 'weather fewclouds':
+    //         console.log('fewclouds')
+    //         break;
     
+    //     default:
+    //         console.log('weather')
+    //         break;
+    // }
     return (
 
         <div className={
@@ -73,7 +132,7 @@ const Home = () => {
                             <img src={`http://openweathermap.org/img/wn/${weather.weather[0].icon}.png`} alt="icon"/>
                         </div>
                         <div className="description">
-                            <div>{weather.weather[0].main}</div>
+                            <div>{weather.weather[0].description}</div>
                         </div>
                         {/* {nameCity}<br></br>
                         {nameCountry}<br></br>
