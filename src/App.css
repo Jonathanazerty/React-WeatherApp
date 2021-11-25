@@ -2,10 +2,6 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-image: url("./images/clearsky.jpg");
-  background-size: cover;
-  background-position: bottom;
-  transition: 0.4 ease-out;
 }
 
 .Link, .submit  {

@@ -37,17 +37,17 @@ const Home = () => {
     // const nameCity = weather.city.name;
     // const nameCountry = weather.city.country;
     // const temperature = weather.list[0].main.temp;
-    // const description = weather.list[0].weather[0].description;
+    
     return (
 
         <div className={
             (typeof weather.main != "undefined") 
-                ? ((weather.main.temp > 15) 
-                    ? 'weather warm'
+                ? ((weather.weather[0].description) 
+                    ? 'weather mist' || 'weather scatteredclouds' || 'weather brokenclouds' || 'weather showerrain' || 'weather rain' || 'weather thunderstorm' || 'weather snow' || 'weather fewclouds'
                     : 'weather')
                 : 'weather'}>
+            <div className="header">{today}</div>
             <main>
-                <h3 className="todaysdate"> {today} </h3>
                 <input  
                     className="input" 
                     type="text" 
@@ -60,14 +60,17 @@ const Home = () => {
                 {/* <button className="submit" onClick={weatherInfo}>Submit</button> */}
                 {(typeof weather.main != "undefined") ? (
                     <div className="weather-info">
+                        <div className="todaysdate"> 
+                            <div>{today}</div>
+                        </div>
                         <div className="location">
                             <div>{weather.name}, {weather.sys.country}</div>
                         </div>
-                        <div className="icon">
-                            <img src={`http://openweathermap.org/img/wn/${weather.weather[0].icon}.png`} alt="icon"/>
-                        </div>
                         <div className="temperature">
                             <div>{Math.round(weather.main.temp)}°C</div>
+                        </div>
+                        <div className="icon">
+                            <img src={`http://openweathermap.org/img/wn/${weather.weather[0].icon}.png`} alt="icon"/>
                         </div>
                         <div className="description">
                             <div>{weather.weather[0].main}</div>
